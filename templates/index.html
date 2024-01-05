@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Flower Prediction</title>
+</head>
+<body class="backdrop-blur items-center justify-center">
+    <div class=" flex items-center justify-center">
+        <h1 class="mx-6">Flower Prediction</h1>
+    </div>
+    
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="file">Choose an image:</label><br><br>
+        <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>Prediction:</h3>
+    <p id="prediction">{{ prediction }}</p>
+
+</body>
+</html>
