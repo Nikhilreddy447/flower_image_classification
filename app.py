@@ -26,10 +26,10 @@ def index():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    if 'file' not in request.files:
+    if 'imageInput' not in request.files:
         return jsonify({'error': 'No file part'})
     
-    file = request.files['file']
+    file = request.files['imageInput']
     
     if file.filename == '':
         return jsonify({'error': 'No selected file'})
