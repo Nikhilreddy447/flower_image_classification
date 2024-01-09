@@ -3,4 +3,4 @@ pandas
 opencv-python
 scikit-learn
 Flask
-tensorflow
+tensorflow==2.5.0
