@@ -3,4 +3,5 @@ pandas
 opencv-python
 scikit-learn
 Flask
-tensorflow==2.5.0
+Gunicorn
+tensorflow
